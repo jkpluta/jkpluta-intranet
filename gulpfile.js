@@ -39,5 +39,5 @@ gulp.task('nginx', function() {
 });
 
 gulp.task('iis', function() {
-    gPages('iis.html', 'c:/temp/www');
+    gPages('iis.html', 'c:/inetpub/wwwroot');
 });
