@@ -15,6 +15,12 @@
     "url": "https://github.com/jkpluta/jkpluta-intranet.git"
   },
   "scripts": {
-    "start": "http-server -a localhost -p 60080 -o -c-1"
+    "start": "http-server -a localhost -p 60080 -o -c-1",
+    "iis": "gulp iis",
+    "nginx": "sudo gulp nginx"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2"
   }
 }
