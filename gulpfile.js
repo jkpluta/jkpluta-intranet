@@ -26,9 +26,10 @@ function gCpDirs(dirs, dst) {
 }
 
 function gPages(page, dst) {
-    gCpDirs(['fonts', 'img', 'css'], dst);
+    gCpDirs(['js', 'fonts', 'img', 'css'], dst);
     gCopyRen("img/icon.ico", "favicon.ico", dst);
-    gCopyRen(page, "index.html", dst);
+    gCopy("index.html", dst);
+    gCopyRen(page, "main.html", dst);
 }
 
 gulp.task('default', function() {
